@@ -28,7 +28,7 @@ Originally described by Roy Fielding in his PhD [dissertation] (http://www.ics.u
 #HSLIDE
 ####Guiding Principles of REST
 
-1. **Client–server**
+P1 **Client–server**
 
 * Clients are not concerned with data storage and other logic.
 * Servers do not concern about user interface.
@@ -41,7 +41,7 @@ Originally described by Roy Fielding in his PhD [dissertation] (http://www.ics.u
 #HSLIDE
 ####Guiding Principles of REST
 
-2. **Uniform Interface**
+P2 **Uniform Interface**
 
 * **addressability** individual resources identified by URIs (Universal Resource Identifiers)
 * resources are decoupled from their representations (A JSON document representing a view over a database).
@@ -53,7 +53,7 @@ Originally described by Roy Fielding in his PhD [dissertation] (http://www.ics.u
 
 #HSLIDE
 ####Guiding Principles of REST
-3. **Stateless**
+P3 **Stateless**
  
 * Requests must contain all of the information necessary to understand the request.
 * => Requests cannot take advantage of any stored context on the server.
@@ -62,14 +62,14 @@ Originally described by Roy Fielding in his PhD [dissertation] (http://www.ics.u
 
 #HSLIDE
 ####Guiding Principles of REST
-4. **Cacheable**
+P4 **Cacheable**
 
 * Cache policies must be included with responses.
 * Clients are free to reuse cached data as it remains valid.
 
 #HSLIDE
 ####Guiding Principles of REST
-5. **Layered System** or **Microservices**
+P5 **Layered System** or **Microservices**
 
 * Layered architecture composed of hierarchical layers
 * Components cannot “see” beyond the immediate layer with which they are interacting.
@@ -79,7 +79,7 @@ Originally described by Roy Fielding in his PhD [dissertation] (http://www.ics.u
 
 #HSLIDE
 ####Guiding Principles of REST
-6. **Code on demand (optional)**
+P6 **Code on demand (optional)**
 
 * REST allows client functionality to be extended by downloading and executing code in the form of applets or scripts. 
 * This simplifies clients by reducing the number of features required to be pre-implemented.
