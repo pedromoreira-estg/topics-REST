@@ -88,7 +88,7 @@ P6 **Code on demand (optional)**
 
 #HSLIDE
 ####The Web : HTTP
-A simple request
+A simple request (simplified)
 
 ```http
 GET /posts/1 HTTP/1.1
@@ -98,4 +98,21 @@ Pragma: no-cache
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
 Accept-Encoding: gzip, deflate
+```
+
+and the response (simplified)
+
+```
+HTTP/1.1 200 OK
+Date: Tue, 13 Dec 2016 23:08:58 GMT
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=14400
+Content-Encoding: gzip
+
+{
+  "userId": 1,
+  "id": 1,
+  //...
+}
+
 ```
