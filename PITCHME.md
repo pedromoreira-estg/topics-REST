@@ -90,7 +90,7 @@ P6 **Code on demand (optional)**
 ####The Web : HTTP
 A simple request
 
-```
+```http
 GET /posts/1 HTTP/1.1
 Host: jsonplaceholder.typicode.com
 Connection: keep-alive
