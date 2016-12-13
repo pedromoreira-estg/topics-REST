@@ -1,0 +1,7 @@
+HTTP/1.1 302 Found
+Cache-Control: private
+Content-Type: text/html; charset=UTF-8
+Location: http://www.google.pt/?gfe_rd=cr&ei=1XpQWPT_FPCs8weWl6GIDw
+Content-Length: 258
+Date: Tue, 13 Dec 2016 22:48:53 GMT
+
