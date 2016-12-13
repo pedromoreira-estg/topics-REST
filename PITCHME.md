@@ -8,11 +8,12 @@
 
 #HSLIDE
 ### What is it?
-Architectural Style for distriibute Hypermedia Systems
+* Architectural Style for distriibute Hypermedia Systems
 
-Originally described by Roy Fielding in his PhD [dissertation] (http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
+* Originally described by Roy Fielding in his PhD [dissertation] (http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
 
-6 guiding constraints
+* six guiding constraints
+> different authors may present a different organizations of the same principles 	
 
 
 #HSLIDE
