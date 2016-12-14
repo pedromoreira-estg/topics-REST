@@ -1,4 +1,100 @@
 #HSLIDE
+#SOA
+###Service Oriented Architecture
+
+#HSLIDE
+###Service Oriented Architecture
+
+* design style for software.
+* based on services.
+* services carry out small functionality.
+* reusable, decoupled and distributed services.
+
+
+#HSLIDE
+###Service Oriented Architecture
+####Advantages
+* Reusability
+ * assemblage small, self-contained, and loosely coupled pieces.
+* Maintainability
+ * independent and smaller pieces of software.
+* reliability
+* Location Independence
+ * published into a directory
+* Improved Scalability and Availability
+ * easy to deploy multiple instances
+* Improved Software Quality
+ * less redundancy
+* Platform Independence
+ * message based
+
+
+#HSLIDE
+###Service Oriented Architecture
+####Disadvantages
+* Increased Overhead
+ * Every time a service interacts with another service, complete validation of input takes place. This increases the response time and increases machine load, and thereby degrades performance.
+
+* Complex Service Management
+ * Ensure that messages have been delivered in a timely manner. Lots of messages.
+
+* High Investment Cost
+ * Implementation of SOA requires a large initial investment (tech and human resources)
+
+#HSLIDE
+###Service Oriented Architecture
+
+####SOA may not be recommended for:
+* homogeneous applications
+* with heavy data exchange and with complex state
+* real time applications
+* stand-alone applications
+
+#HSLIDE
+###Service Oriented Architecture
+####SOAP and REST
+* two different choices to implement a SOA.
+
+
+ 
+#HSLIDE
+###SOAP vs REST
+
+#####SOAP 
+* standard, rigid
+* HTTP as trasnport protocol
+* Own protocol
+* XML (many tools, but slow and verbose)
+* no cache
+* exposes operations
+
+#####REST
+* an architectural style
+* HTTP as application protocol
+* build on top of HTTP
+* different representation formats (JSON, XML, ...)
+* cacheable (scability and perceived performance)
+* exposes resources (representations)
+
+
+#HSLIDE
+###SOAP vs REST
+
+
+#####SOAP
+ * maturity
+ * complete specification
+ * support conversational state management
+ * transactions, security
+
+#####REST 
+ * ease of implementation
+ * agility of the design
+ * lightweight
+ * better support in browsers
+
+
+#HSLIDE
 #REST
 
 ####**RE**presentational **S**tate **T**ransfer
@@ -109,7 +205,9 @@ P5 **Layered System** or **Microservices**
 * Components cannot “see” beyond the immediate layer with which they are interacting.
 * Layered systems reduce coupling across multiple layers by hiding the inner layers from all except the adjacent outer layer.
  * => improving evolvability and reusability.
-* example : client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way. 
+* example : client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way.
+ * Intermediary servers may improve system scalability by enabling load-balancing and by providing shared caches. 
+ * Layers may also enforce security policies.
 
 #HSLIDE
 ####Guiding Principles of REST
