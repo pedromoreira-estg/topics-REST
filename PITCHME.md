@@ -57,13 +57,19 @@ P1 **Client–server**
 
 P2 **Uniform Interface**
 
-* **addressability** and **resource-based**: individual resources identified by URIs (Universal Resource Identifiers). Resources are decoupled from their representations (A JSON document representing a view over a database using some specific character encoding).
-* **representation oriented**:  Clients are able to manipulate resources from their representations (e.g. delete a record of the database).
-* **self descriptive** messages are self-contained, and include the necessary data to process the message (e.g. mime type).
-* **Hypermedia as the Engine of Application State** (HATEOAS)
- *  Clients deliver state via body contents, query-string parameters, request headers and the requested URI (the resource name).
- * Services deliver state to clients via body content, response codes, and response headers.
- * (Hyper) Links to the resource or to related resopurces are provided.
+* **P2.a)** **addressability** and **resource-based**: individual resources identified by URIs (Universal Resource Identifiers). Resources are decoupled from their representations (A JSON document representing a view over a database using some specific character encoding).
+* **P2.b)** **representation oriented**:  Clients are able to manipulate resources from their representations (e.g. delete a record of the database).
+
+#HSLIDE
+####Guiding Principles of REST
+
+P2 **Uniform Interface**
+
+* **P2.c)** **self descriptive** messages are self-contained, and include the necessary data to process the message (e.g. mime type).
+* **P2.d)** **Hypermedia as the Engine of Application State** (HATEOAS) 
+ 1.  Clients deliver state via body contents, query-string parameters, request headers and the requested URI (the resource name).
+ 1. Services deliver state to clients via body content, response codes, and response headers.
+ 1. (Hyper) Links to the resource or to related resopurces are provided.
 
 #HSLIDE
 ####Guiding Principles of REST
