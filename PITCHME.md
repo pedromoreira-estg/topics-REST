@@ -335,6 +335,7 @@ typical RESTful API HTTP semantics and HTTP status codes
 |DELETE| 404 (not found)| 200 (OK) <br> 404 (not found)|
 
 #HSLIDE
+##Exercise 1
 #### Example (Fake) API
 
 * JSONPlaceHolder
@@ -342,3 +343,31 @@ typical RESTful API HTTP semantics and HTTP status codes
 * Software needed:
  * Postman (Google Chrome, Windows, MacOS app) 
  * `https://www.getpostman.com/`
+
+
+#HSLIDE
+##Exercise 2
+#### Example (Fake) API
+
+* install json-server
+ * npm install -g json-server  
+* design a json document to store simple school related info
+ * programmes (cursos)
+ * classes (turmas)
+ * students (alunos)
+* run a instance of json-server with the db.
+
+#HSLIDE
+##Exercise 3
+#### Consume Example (Fake) API
+
+* use jquery to consume REST API
+
+#HSLIDE
+##Exercise 3
+#### Your Own API
+Develop your own node REST API using:
+
+* Node + Express + Mongo + Mongoose
+or
+* Node + Express + MySQL + Sequelize
