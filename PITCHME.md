@@ -60,8 +60,8 @@
 
  
 #HSLIDE
-###SOAP vs REST
-
+###Service Oriented Architecture
+####SOAP vs REST
 #####SOAP 
 * standard, rigid
 * HTTP as trasnport protocol
@@ -69,7 +69,6 @@
 * XML (many tools, but slow and verbose)
 * no cache
 * exposes operations
-
 #####REST
 * an architectural style
 * HTTP as application protocol
@@ -80,15 +79,13 @@
 
 
 #HSLIDE
+###Service Oriented Architecture
 ###SOAP vs REST
-
-
 #####SOAP
  * maturity
  * complete specification
  * support conversational state management
  * transactions, security
-
 #####REST 
  * ease of implementation
  * agility of the design
@@ -220,9 +217,11 @@ P6 **Code on demand (optional)**
 * Example: javascript code provided with a response.
 
 #HSLIDE
-####The Web : HTTP
+####HTTP
 * HTTP : HyperText Transfer Protocol
 * Request-Response Protocol
+* supports the Woeld Wide Web
+* many verbs : `GET`, `PUT`, `POST`, `DELETE`, `OPTIONS`, ...
 
 #HSLIDE
 ####The Web : HTTP
@@ -255,15 +254,30 @@ Content-Encoding: gzip
 
 ```
 
+#HSLIDE
+####URI
+#####Resources
+
+Anything that’s important enough to be referenced as a 
+thing.
+
+Something that can be stored on a computer and represented as a stream of bits (record in a database, result of computation, etc)
+
+* a album with a list of photos
+* a photo* The next five prime numbers after 1024* The sales numbers for 2016
 
 #HSLIDE
-####The Web : HTTP
+####URI
 
-**Resource**
-http://jsonplaceholder.typicode.com/posts/1
-
-**Method**
-GET
+` scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]
+`
+* scheme : access protocol
+* autority (optional) : user name and password
+* host : registered name (dns) or IP address
+* port (optional) : port needed if different from standard
+* path : path to the resource (hierarchical)
+* query (optional): attribute value pairs
+* fragment (optional) : identifier to a secondary resource as a section (part) of a document. 
 
 #HSLIDE
 ####The Web : HTTP : Methods
@@ -319,3 +333,12 @@ typical RESTful API HTTP semantics and HTTP status codes
 |PUT| 404 (not found)| 200 (OK) <br> 204 (no content) <br> 404 (not found)|
 |POST| 201 (created) <br> location header (redirection) <br> with link to new resource  | 404 (not found)|
 |DELETE| 404 (not found)| 200 (OK) <br> 404 (not found)|
+
+#HSLIDE
+#### Example (Fake) API
+
+* JSONPlaceHolder
+ * `http://jsonplaceholder.typicode.com/`
+* Software needed:
+ * Postman (Google Chrome, Windows, MacOS app) 
+ * `https://www.getpostman.com/`
