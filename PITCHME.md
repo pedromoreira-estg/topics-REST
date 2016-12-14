@@ -21,6 +21,10 @@
 * reliability
 * Location Independence
  * published into a directory
+
+#HSLIDE
+###Service Oriented Architecture
+####Advantages (cont.)
 * Improved Scalability and Availability
  * easy to deploy multiple instances
 * Improved Software Quality
@@ -34,10 +38,8 @@
 ####Disadvantages
 * Increased Overhead
  * Every time a service interacts with another service, complete validation of input takes place. This increases the response time and increases machine load, and thereby degrades performance.
-
 * Complex Service Management
  * Ensure that messages have been delivered in a timely manner. Lots of messages.
-
 * High Investment Cost
  * Implementation of SOA requires a large initial investment (tech and human resources)
 
