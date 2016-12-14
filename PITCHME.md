@@ -62,6 +62,7 @@
 #HSLIDE
 ###Service Oriented Architecture
 ####SOAP vs REST
+
 #####SOAP 
 * standard, rigid
 * HTTP as trasnport protocol
@@ -69,6 +70,10 @@
 * XML (many tools, but slow and verbose)
 * no cache
 * exposes operations
+
+#HSLIDE
+###Service Oriented Architecture
+####SOAP vs REST
 #####REST
 * an architectural style
 * HTTP as application protocol
@@ -294,18 +299,6 @@ Something that can be stored on a computer and represented as a stream of bits (
 * **HEAD**
  * Safe, Idempotent
 
-
-#HSLIDE
-#### REST and HTTP Verbs
-* **GET**
- * retrieve a representation of a resource
-* **PUT**
- * update a resource, sending a new representation
- * may also be used to create a resource
-* **DELETE**
- * delete a resource identified by a URI
-* **POST**
- * Create a new resource, in particular subordinate resources
 
 #HSLIDE
 #### REST and HTTP Verbs
