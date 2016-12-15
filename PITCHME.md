@@ -14,7 +14,7 @@
 #HSLIDE
 ###Service Oriented Architecture
 ####Advantages
-* Reusability
+* Re-usability
  * assemblage small, self-contained, and loosely coupled pieces.
 * Maintainability
  * independent and smaller pieces of software.
@@ -65,7 +65,7 @@
 
 #####SOAP 
 * standard, rigid
-* HTTP as trasnport protocol
+* HTTP as transport protocol
 * Own protocol
 * XML (many tools, but slow and verbose)
 * no cache
@@ -79,7 +79,7 @@
 * HTTP as application protocol
 * build on top of HTTP
 * different representation formats (JSON, XML, ...)
-* cacheable (scability and perceived performance)
+* cacheable (scalability and perceived performance)
 * exposes resources (representations)
 
 
@@ -123,7 +123,7 @@
 
 #HSLIDE
 ### What is it?
-* Architectural Style for distriibute Hypermedia Systems
+* Architectural Style for distributed Hypermedia Systems
 
 * Originally described by Roy Fielding in his PhD [dissertation] (http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
 
@@ -169,18 +169,20 @@ P2 **Uniform Interface**
 * **P2.d)** **Hypermedia as the Engine of Application State** (HATEOAS) 
  1.  Clients deliver state via body contents, query-string parameters, request headers and the requested URI (the resource name).
  1. Services deliver state to clients via body content, response codes, and response headers.
- 1. (Hyper) Links to the resource or to related resopurces are provided.
+ 1. (Hyper) Links to the resource or to related resources are provided.
 
 #HSLIDE
 ####Guiding Principles of REST
 
 P2 **Uniform Interface**
 
-* When **REST** is used to design web services, the uniform interface is based on the contrained set of **HTTP** verbs.
+* When **REST** is used to design web services, the uniform interface is based on the constrained set of **HTTP** verbs.
 * Across the web, there are few fundamental operations over resources. HTTP provides four methods (***verbs***) that map to that basic operations:
 
- * Retrieve a representation of a resource:`HTTP GET` * Create a new resource: `HTTP PUT` to a new URI, or `HTTP POST` to an existing URI
- * Modify an existing resource: `HTTP PUT` to an existing URI * Delete an existing resource: `HTTP DELETE`
+ * Retrieve a representation of a resource:`HTTP GET`
+ * Create a new resource: `HTTP PUT` to a new URI, or `HTTP POST` to an existing URI
+ * Modify an existing resource: `HTTP PUT` to an existing URI
+ * Delete an existing resource: `HTTP DELETE`
 
 #HSLIDE
 ####Guiding Principles of REST
@@ -192,7 +194,7 @@ P3 **Stateless**
 
 * => Stateless applications are **easier to scale** (e.g. multiple servers)
 
-* ***importante notice*** stateless does not means that interaction cannot be stateful. Proper mechanisms may be used to transfer state with client requests (url-encoded parameters, information sent in headers, etc.) 
+* ***important notice*** stateless does not means that interaction cannot be stateful. Proper mechanisms may be used to transfer state with client requests (url-encoded parameters, information sent in headers, etc.) 
 
 #HSLIDE
 ####Guiding Principles of REST
@@ -203,12 +205,12 @@ P4 **Cacheable**
 
 #HSLIDE
 ####Guiding Principles of REST
-P5 **Layered System** or **Microservices**
+P5 **Layered System** or **Micro services**
 
 * Layered architecture composed of hierarchical layers
 * Components cannot “see” beyond the immediate layer with which they are interacting.
 * Layered systems reduce coupling across multiple layers by hiding the inner layers from all except the adjacent outer layer.
- * => improving evolvability and reusability.
+ * => improving evolvability and re-usability.
 * example : client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way.
  * Intermediary servers may improve system scalability by enabling load-balancing and by providing shared caches. 
  * Layers may also enforce security policies.
@@ -225,7 +227,7 @@ P6 **Code on demand (optional)**
 ####HTTP
 * HTTP : HyperText Transfer Protocol
 * Request-Response Protocol
-* supports the Woeld Wide Web
+* supports the World Wide Web
 * many verbs : `GET`, `PUT`, `POST`, `DELETE`, `OPTIONS`, ...
 
 #HSLIDE
@@ -269,7 +271,9 @@ thing.
 Something that can be stored on a computer and represented as a stream of bits (record in a database, result of computation, etc)
 
 * a album with a list of photos
-* a photo* The next five prime numbers after 1024* The sales numbers for 2016
+* a photo
+* The next five prime numbers after 1024
+* The sales numbers for 2016
 
 #HSLIDE
 ####URI
@@ -277,7 +281,7 @@ Something that can be stored on a computer and represented as a stream of bits (
 ` scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]
 `
 * scheme : access protocol
-* autority (optional) : user name and password
+* authority (optional) : user name and password
 * host : registered name (dns) or IP address
 * port (optional) : port needed if different from standard
 * path : path to the resource (hierarchical)
